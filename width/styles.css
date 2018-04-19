@@ -1,0 +1,35 @@
+.default {
+    background-color: blue;
+    height: 100px;
+}
+
+.default-smaller-width {
+    background-color: blue;
+    width: 500px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+    width: 60px;
+    height: 60px;
+}
+
+.green {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+}
+
+.purple {
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+}
+
+.orange {
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    width: 50%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Width Examples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!--
+This is a div (block element) with no width set. It defaults to 100%. I set a
+height becuase without a height or something inside of the div, you could not
+see the div because it would default to 0.
+-->
+    <span>Default</span>
+    <div class="default"></div>
+    <br />
+
+
+<!--
+This shows a parent child relationship. The parent is on the outside and the child
+is what is on the inside. An element can only have one parent or child, however that
+parent or child can have it's own parent.
+
+Because block elements are 100% width by default, I made the child smaller. Otherwise
+the child would take up the entire width of the parent div.
+-->
+    <span>Parent/Child</span>
+    <div class="default"><!-- Parent -->
+        <div class="red"></div><!-- Child-->
+    </div>
+    <br />
+
+    <div class="default"><!-- Parent -->
+        <div class="red"><!-- Child of default and parent of green -->
+            <div class="green"></div><!-- Child of red -->
+        </div>
+    </div>
+    <br />
+
+
+<!--
+In this last example, notice how block elements automatically get put on a new line. The
+purple is placed under the green. Block elments always take a new line unless you tell
+them not to with CSS.
+-->
+    <div class="default"><!-- Parent -->
+        <div class="red"><!-- Child of default and parent of green -->
+            <div class="green"></div><!-- Child of red and sibling to purple-->
+            <div class="purple"></div><!-- Child of red and sibling to green-->
+        </div>
+    </div>
+    <br />
+
+
+<!--
+Here I have set the child div's width to 50%. What is important here is 50% of what? 50% of
+it's parent.
+-->
+    <span>Width and Percentage</span>
+    <div class="default"><!-- Parent -->
+        <div class="orange"></div><!-- Child-->
+    </div>
+    <br />
+
+
+<!--
+Now in this example, I'm changing the width of the parent to 500px. The child adjusts on it's
+own. It is still 50% of it's parent. Since the parent has a set with of 500px, that means that
+orange must be 250px;
+-->
+<div class="default-smaller-width"><!-- Parent -->
+    <div class="orange"></div><!-- Child-->
+</div>
+<br />
+
+
+</body>
+</html>
